@@ -29,10 +29,10 @@ A Terraform-based infrastructure-as-code (IaC) project to provision a complete A
 ---
 
 ## 📁 File Structure
- .
- |- main.tf
- |- variables.tf
- |- outputs.tf
- |- users.yaml
- |- terraform.tfvars
- |_ README.md
+.
+|- main.tf
+|- variables.tf
+|- outputs.tf
+|- users.yaml
+|- terraform.tfvars
+|_ README.md
