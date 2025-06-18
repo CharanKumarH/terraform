@@ -35,4 +35,14 @@ A Terraform-based infrastructure-as-code (IaC) project to provision a complete A
 |- outputs.tf
 |- users.yaml
 |- terraform.tfvars
+|- .env
 |_ README.md
+
+
+🔐 AWS Credentials Setup
+To authenticate Terraform with your AWS account, create a .env file in the root of your project directory with the following contents:
+
+.env
+AWS_ACCESS_KEY_ID=your-access-key-id
+AWS_SECRET_ACCESS_KEY=your-secret-access-key
+🔒 Important: Do not commit the .env file to Git. It is already excluded via .gitignore.
