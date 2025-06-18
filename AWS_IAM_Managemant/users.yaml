@@ -1,0 +1,10 @@
+users:
+  - username: "ram"
+    roles: [AmazonEC2FullAccess]
+  - username: "shyam"
+    roles: [AmazonEC2FullAccess, AmazonS3FullAccess]
+  - username: "sita"
+    roles: [AmazonS3FullAccess]
+  - username: "gita"
+    roles: [AmazonS3FullAccess]
+    
