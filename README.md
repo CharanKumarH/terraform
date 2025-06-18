@@ -29,8 +29,6 @@ A Terraform-based infrastructure-as-code (IaC) project to provision a complete A
 ---
 
 ## 📁 File Structure
-
-
 .
 ├── main.tf
 ├── variables.tf
