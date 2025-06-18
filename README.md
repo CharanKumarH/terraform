@@ -46,8 +46,8 @@ To authenticate Terraform with your AWS account, create a .env file in the root 
 
 - .env
 
-- AWS_ACCESS_KEY_ID=your-access-key-id
+  AWS_ACCESS_KEY_ID=your-access-key-id
 
-- AWS_SECRET_ACCESS_KEY=your-secret-access-key
+  AWS_SECRET_ACCESS_KEY=your-secret-access-key
 
 🔒 Important: Do not commit the .env file to Git. It is already excluded via .gitignore.
