@@ -1,53 +1,52 @@
-# 📦 Terraform AWS VPC Setup with EC2, Subnets, and IAM
+# 📦 Terraform AWS VPC Setup: EC2, Subnets & IAM Automation
 
-A Terraform-based infrastructure-as-code (IaC) project to provision a complete AWS environment. This includes:
+A robust, modular Infrastructure-as-Code (IaC) solution using Terraform to provision AWS resources, including:
 
 - Custom VPC with public and private subnets
-- EC2 instance provisioning using `for_each` with a configurable map
-- IAM user creation with role-based policy attachment
-- Modular, scalable, and reusable Terraform code structure
+- Dynamic EC2 instance deployment (using `for_each` with a configurable map)
+- Automated IAM user creation and role-based policy assignment
+- Clean, scalable, and reusable module structure
 
 ---
 
-## ✅ Features
+## ✅ Key Features
 
-- 🔧 Configurable VPC and subnet layout using `terraform-aws-modules/vpc/aws`
-- 📦 Dynamic EC2 instance creation using maps and `for_each`
-- 👤 IAM users with role mapping via YAML
-- 🛡️ User-specific IAM policy attachment
-- 📂 Clean outputs and logical resource naming
-
----
-
-## 🚀 Technologies Used
-
-- Terraform (v1.5+ recommended)
-- AWS (via `hashicorp/aws` provider)
-- YAML input for user configuration
-- Reusable modules and dynamic expressions
+- 🔧 Customizable VPC and subnet architecture via [`terraform-aws-modules/vpc/aws`](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
+- 🚀 Dynamic EC2 instance management using maps and `for_each`
+- 👤 IAM users and role mapping driven by YAML configuration
+- 🛡️ Granular IAM policy assignment per user
+- 📂 Logical resource naming and organized outputs
 
 ---
 
-## 📁 File Structure
+## 🛠️ Technologies & Tools
 
-- .
-- |- main.tf
-- |- variables.tf
-- |- outputs.tf
-- |- users.yaml
-- |- terraform.tfvars
-- |- .env
-- |- README.md
+- **Terraform**: v1.5 or newer (recommended)
+- **AWS**: via the official `hashicorp/aws` provider
+- **YAML**: for flexible IAM user/role configuration
+- **Reusable Modules**: clean, DRY infrastructure code
 
+---
+
+## 📁 Project Structure
+```
+  . 
+  ├── main.tf
+  ├── variables.tf
+  ├── outputs.tf
+  ├── users.yaml
+  ├── terraform.tfvars
+  ├── .env
+  └── README.md
+```
+
+
+---
 
 ## 🔐 AWS Credentials Setup
 
-To authenticate Terraform with your AWS account, create a .env file in the root of your project directory with the following contents:
+To authenticate Terraform with AWS, create a `.env` file in your project’s root directory:
 
-- .env
-
-  AWS_ACCESS_KEY_ID=your-access-key-id
-
-  AWS_SECRET_ACCESS_KEY=your-secret-access-key
-
-🔒 Important: Do not commit the .env file to Git. It is already excluded via .gitignore.
+```env
+AWS_ACCESS_KEY_ID=your-access-key-id
+AWS_SECRET_ACCESS_KEY=your-secret-access-key
